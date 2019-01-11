@@ -44,5 +44,7 @@
   <br>
   <a href="a/testServletAPI">testServletAPI</a><br>
   <a href="a/testModelAndView">testModelAndView</a><br>
+  <a href="a/testMap">testMap</a><br>
+  <a href="a/testSessionAtribute">testSessionAtribute</a><br>
   </body>
 </html>

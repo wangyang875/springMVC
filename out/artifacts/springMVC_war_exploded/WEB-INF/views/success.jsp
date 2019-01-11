@@ -13,5 +13,11 @@
   <body>
  <h4>Success Page</h4>
   time: ${requestScope.time}
+  <br>
+  names: ${requestScope.names}
+  <br>
+  request user:${requestScope.user}
+ <br>
+ session user:${sessionScope.user}
   </body>
 </html>

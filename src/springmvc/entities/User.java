@@ -1,11 +1,20 @@
 package springmvc.entities;
 
 public class User {
+    private Integer id;
     private String username;
     private String password;
     private String email;
     private int age;
     private Address address;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -47,14 +56,32 @@ public class User {
         this.address = address;
     }
 
+    public User(String username, String password, String email, int age) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.age = age;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
+                "id=" + id +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 ", age=" + age +
-                ", address=" + address +
                 '}';
+    }
+
+    public User(Integer id, String username, String password, String email, int age) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.age = age;
+    }
+
+    public User() {
     }
 }
